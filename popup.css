@@ -1,0 +1,35 @@
+:root { color-scheme: dark; font-family: ui-rounded, "Arial Rounded MT Bold", system-ui, sans-serif; background: #f2ede1; color: #172018; }
+* { box-sizing: border-box; }
+body { width: 330px; margin: 0; background: #f2ede1; }
+main { padding: 22px; }
+.eyebrow { margin: 0 0 8px; color: #466345; font: 700 10px/1.2 ui-monospace, monospace; letter-spacing: .12em; }
+h1 { margin: 0; font-size: 38px; line-height: .88; letter-spacing: -.07em; }
+h1 em { color: #c8522c; font-family: Georgia, serif; font-weight: 500; letter-spacing: -.08em; }
+.intro { margin: 18px 0 20px; color: #4d574c; font: 14px/1.45 system-ui, sans-serif; }
+label { display: block; margin-bottom: 7px; font: 700 12px/1 system-ui, sans-serif; }
+.key-row { display: flex; gap: 7px; }
+input { min-width: 0; flex: 1; border: 1px solid #b7c0ae; border-radius: 7px; padding: 10px; background: #fffdf7; color: #172018; font: 13px ui-monospace, monospace; }
+button { width: 100%; cursor: pointer; border-radius: 7px; padding: 10px 12px; font: 700 13px system-ui, sans-serif; }
+.quiet { width: auto; border: 1px solid #b7c0ae; background: transparent; color: #31432f; }
+.hint { margin: 7px 0 18px; color: #687265; font: 11px/1.35 system-ui, sans-serif; }
+.primary { border: 1px solid #172018; background: #172018; color: #f7f2e8; }
+.secondary { margin-top: 8px; border: 1px solid #aeb8a6; background: transparent; color: #172018; }
+button:hover { transform: translateY(-1px); }
+button:focus-visible, input:focus-visible { outline: 3px solid #e3a88a; outline-offset: 2px; }
+#status { min-height: 17px; margin: 12px 0 0; color: #466345; font: 12px/1.3 system-ui, sans-serif; }
+#status[data-error="true"] { color: #a33d22; }
+@media (prefers-reduced-motion: reduce) { button:hover { transform: none; } }
+
+/* ── Sections (cache, auto-translate, sites) ────────────────────── */
+.section { margin-top: 18px; padding-top: 14px; border-top: 1px solid #d5cfc0; }
+.section-label { margin: 0 0 6px; color: #466345; font: 700 10px/1.2 ui-monospace, monospace; letter-spacing: .12em; }
+.cache-stats { margin: 0 0 8px; color: #4d574c; font: 12px/1.4 system-ui, sans-serif; }
+.auto-info { margin: 0 0 8px; color: #172018; font: 700 13px/1.3 system-ui, sans-serif; }
+.small { padding: 6px 10px; font-size: 11px; }
+
+/* ── Active sites list ─────────────────────────────────────────── */
+.sites-list { list-style: none; margin: 0 0 8px; padding: 0; }
+.sites-list li { display: flex; align-items: center; justify-content: space-between; padding: 4px 0; }
+.site-name { font: 12px/1.3 system-ui, sans-serif; color: #31432f; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.site-remove { width: auto; min-width: 24px; padding: 2px 6px; font-size: 11px; border: none; color: #a33d22; background: transparent; }
+.site-remove:hover { color: #c8522c; background: #f2e8e2; }

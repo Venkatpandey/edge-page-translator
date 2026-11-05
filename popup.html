@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="popup.css">
+    <title>Page to English</title>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">GOOGLE CLOUD TRANSLATION</p>
+      <h1>Page to<br><em>English.</em></h1>
+      <p class="intro">Translate visible text on current website. Product prices, codes, and form fields stay untouched.</p>
+      <label for="api-key">Google Cloud API key</label>
+      <div class="key-row">
+        <input id="api-key" type="password" autocomplete="off" spellcheck="false" placeholder="Paste API key">
+        <button id="toggle-key" class="quiet" type="button" aria-label="Show API key">Show</button>
+      </div>
+      <p class="hint">Saved in this browser profile. Restrict key to Cloud Translation API.</p>
+      <button id="translate" class="primary" type="button">Translate this page</button>
+      <button id="restore" class="secondary" type="button">Show original page</button>
+      <p id="status" role="status" aria-live="polite"></p>
+
+      <!-- Auto-translate indicator -->
+      <div id="auto-section" class="section" hidden>
+        <p class="section-label">AUTO-TRANSLATING</p>
+        <p id="auto-info" class="auto-info"></p>
+        <button id="stop-auto" class="quiet small" type="button">Stop auto-translate for this site</button>
+      </div>
+
+      <!-- Cache section -->
+      <div class="section">
+        <p class="section-label">TRANSLATION CACHE</p>
+        <p id="cache-stats" class="cache-stats">Loading…</p>
+        <button id="clear-cache" class="quiet small" type="button">Clear translation cache</button>
+      </div>
+
+      <!-- Active sites list -->
+      <div id="sites-section" class="section" hidden>
+        <p class="section-label">AUTO-TRANSLATE SITES</p>
+        <ul id="sites-list" class="sites-list"></ul>
+        <button id="clear-sites" class="quiet small" type="button">Stop all</button>
+      </div>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

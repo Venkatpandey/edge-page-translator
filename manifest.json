@@ -1,0 +1,16 @@
+{
+  "manifest_version": 3,
+  "name": "Page to English",
+  "version": "1.1.0",
+  "description": "Translate any open website to English with your Google Cloud Translation API key. Caches translations across pages for faster repeat visits.",
+  "action": {
+    "default_title": "Page to English",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "service-worker.js",
+    "type": "module"
+  },
+  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "host_permissions": ["https://translation.googleapis.com/*", "<all_urls>"]
+}
