@@ -1,5 +1,7 @@
 # Page to English — Edge Extension
 
+> 🎨 **Vibe coded** with AI — tested and working.
+
 Translate any website to English with one click. Uses your own Google Cloud Translation API key. Translations are cached locally so repeat visits, scrolling, and navigating within a site cost zero API calls.
 
 ## Features
